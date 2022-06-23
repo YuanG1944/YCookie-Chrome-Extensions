@@ -1,0 +1,36 @@
+{
+  "name": "YCookie",
+  "version": "0.0.0.2",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "localhost*"
+  ],
+  "permissions": [
+    "storage",
+    "cookies",
+    "notifications"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "inject.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "./icons/cookies.png",
+    "48": "./icons/cookies.png",
+    "128": "./icons/cookies.png"
+  }
+}

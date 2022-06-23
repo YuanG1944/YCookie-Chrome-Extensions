@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <title>YCookie set</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="y-main">
+    <div class="y-header">
+      YCookie
+    </div>
+
+    <div class="y-input-bar">
+      <div class="input-group">
+        <input type="text" name="import-cookie" placeholder="Import Cookie JSON" id="y-input-paste">
+        <button class="pure-button pure-button-primary" id="y-paste">Import</button>
+      </div>
+    </div>
+
+    <div class="y-bar" id="y-copy">
+      <span class="y-bar-title">
+        <div class="y-copy"></div>
+        <span>Copy cookie</span>
+
+      </span>
+    </div>
+
+    <div class="y-bar" id="y-clear">
+      <span class="y-bar-title">
+        <div class="y-clear"></div>
+        <span>
+          Clear cookie
+        </span>
+      </span>
+    </div>
+
+  </div>
+
+
+  <script type="module" src="./popup.js"></script>
+
+</body>
+
+</html>
