@@ -1,6 +1,6 @@
 {
   "name": "YCookie",
-  "version": "0.0.0.2",
+  "version": "0.0.2",
   "manifest_version": 3,
   "background": {
     "service_worker": "background.js"

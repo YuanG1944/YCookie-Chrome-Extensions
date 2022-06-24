@@ -16,7 +16,6 @@ export default () => {
 
   pasteDom.addEventListener("click", async () => {
     const { value } = input;
-    console.log("value--->", value);
     if (value) {
       try {
         sendMessageToContentScript(value, function (msg) {
@@ -35,6 +34,7 @@ export default () => {
                 console.log(id);
               }
             );
+            input.value = "";
           }
           if (msg === "fail") {
             chrome.notifications.create(
