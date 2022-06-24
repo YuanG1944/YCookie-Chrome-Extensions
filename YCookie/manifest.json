@@ -7,8 +7,7 @@
   },
   "host_permissions": [
     "http://*/*",
-    "https://*/*",
-    "localhost*"
+    "https://*/*"
   ],
   "permissions": [
     "storage",
