@@ -10,7 +10,6 @@
     "https://*/*"
   ],
   "permissions": [
-    "storage",
     "cookies",
     "notifications"
   ],
